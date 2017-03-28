@@ -44,11 +44,11 @@ table {
 
 body {
 
-background-color: violet;
+background-color: rgb(225,231,237);
 }
 
 .main {
-  margin: 100px auto;
+  margin: 96px auto;
   width: 1140px;
 
 }
@@ -63,35 +63,227 @@ background-color: violet;
 .hero-form__content {
   display: flex;
   flex-direction: column;
-  align-items: center;
+
 
 }
 .hero-form__header {
   font-size: 150%;
   font-weight: 400;
   text-transform: uppercase;
-  margin-top: 300px;
-	margin-bottom: 20px;
+  margin-top: 177px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 600;
+	font-size: 24px;
+	color: rgb(51,54,59);
+	display: flex;
+	align-self: center;
 }
+
+.hero_form__description {
+	margin-bottom: 17px;
+	margin-top: 39px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: bolder;
+	color: rgb(51,54,59);
+	display: flex;
+	align-self: center;
+}
+
 .search-box__input {
   padding: 15px;
   border-radius: 3px;
   outline: 0;
   border: 0;
-  width: 490px;
+  width: 527px;
   height: 50px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
-
+	margin-bottom: 177px;
+	margin-left: 264px;
+	text-indent: 42px;
 }
+
+
 
 .search-box__button {
 
   padding: 15px;
-  width: 100px;
+  width: 50px;
   height: 50px;
   border: 0;
 margin-left: -0.3em;
 border-top-right-radius: 3px;
 border-bottom-right-radius: 3px;
+text-align: center;
+background-color: rgb(140,145,255);
+font-family: 'Roboto', sans-serif;
+
+}
+
+
+.placeholder {
+	width: 527px;
+	text-indent: 54px;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    opacity:0.7;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  opacity:0.7;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  opacity:0.7;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  opacity:0.7;
+}
+
+
+.first-row {
+	display: flex;
+	width: 1140px;
+	height: 360px;
+}
+
+
+
+
+
+
+
+.two-boxes {
+	display: flex;
+	flex-direction: row;
+	margin-top: 30px;
+}
+.two-boxes__left {
+	background-image: url("images/yellow-woman.png");
+	height: 264px;
+	width: 360px;
+	background-repeat: no-repeat;
+	display: flex;
+}
+.two-boxes__right {
+	background-color: rgb(255,255,255);
+	height: 264px;
+	width: 390px;
+	display: flex;
+	flex-direction: column;
+}
+
+.two-boxes__right-header {
+	text-transform: uppercase;
+	font-family: 'roboto' sans-serif;
+	margin-top: 30px;
+	margin-left: 37px;
+
+	font-weight: 600;
+	display: flex;
+	flex-direction: column;
+
+}
+.two-boxes__right-header:after {
+	content: "";
+	border-bottom: 2px solid rgb(255, 112, 152);
+	width: 40px;
+	display: block;
+	margin-top: 20px;
+
+}
+.two-boxes__right-description {
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+	margin-left: 37px;
+	margin-right: 25px;
+	font-family: 'roboto' sans-serif;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	line-height: 140%;
+}
+
+
+
+
+
+
+.bottom-line {
+	display: flex;
+	flex-direction: row;
+}
+.bottom-line__alex-circle {
+	margin-left: 30px;
+	margin-top: 25px;
+	display: flex;
+}
+.bottom-line__name-alex {
+	display: flex;
+	margin-left: 10px;
+	margin-top: 38px;
+	font-family: 'roboto' sans-serif;
+	font-weight: 600;
+}
+.like-heart {
+	margin-top: 38px;
+	margin-left: 166px;
+}
+.likes {
+	margin-left:10px;
+	margin-top: 38px;
+	opacity: 0.5;
+	filter:alpha(opacity=50);
+	font-size: 95%;
+}
+
+
+
+
+
+.coffe-box {
+	display: flex;
+	flex-direction: row;
+}
+.coffe-box__left-box {
+	background-image: url("images/coffee-box.png");
+	height: 264px;
+	width: 263px;
+	margin-top: 30px;
+	margin-left: 30px;
+	display: flex;
+}
+.coffe-box__right-description {
+	height: 264px;
+	width: 97px;
+	background-color: rgb(255,255,255);
+	margin-top: 30px;
+	display: flex;
+}
+.coffe-box__column {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+
+}
+.coffe-box__column__likes {
+	display: flex;
+	margin-left: 35px;
+	margin-top: 27px;
+	margin-bottom: 60px;
+	width: 97px;
+
+}
+.likes204 {
+display: flex;
+}
+
+.coffe-box__column__chat {
+	display: flex;
+	margin-left: 35px;
+	border-bottom: 1px solid black;
+}
+.coffe-box__column__follow {
+	display: flex;
+	margin-left: 35px;
 }
