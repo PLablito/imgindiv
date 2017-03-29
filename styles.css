@@ -145,6 +145,7 @@ font-family: 'Roboto', sans-serif;
 	display: flex;
 	width: 1140px;
 	height: 360px;
+	margin-bottom: 30px;
 }
 
 
@@ -253,37 +254,169 @@ font-family: 'Roboto', sans-serif;
 	margin-left: 30px;
 	display: flex;
 }
-.coffe-box__right-description {
-	height: 264px;
-	width: 97px;
-	background-color: rgb(255,255,255);
-	margin-top: 30px;
-	display: flex;
-}
-.coffe-box__column {
+.coffe-box__right-column {
 	display: flex;
 	flex-direction: column;
-	align-content: center;
-
+	margin-top: 29px;
 }
-.coffe-box__column__likes {
-	display: flex;
-	margin-left: 35px;
-	margin-top: 27px;
-	margin-bottom: 60px;
+.block {
+	margin: 1px;
+	background-color: rgb(255,255,255);
 	width: 97px;
+	height: 86.5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.block__description {
+	margin-top: 10px;
+}
+
+
+
+
+
+.second-row {
+	width: 1140px;
+	height: 504px;
+	display: flex;
 
 }
-.likes204 {
+
+
+.ramsay-card {
+	display: flex;
+	flex-direction: column;
+
+
+}
+.ramsay-card__mountain {
+background-image: url("images/cover1mountain.jpg");
+height: 328px;
+width: 360px;
+background-repeat: no-repeat;
+background-color: rgb(255, 255, 255);
+
+}
+
+.ramsay-circle-pic {
 display: flex;
+margin-left: 118px;
+margin-top: 117px;
+
 }
 
-.coffe-box__column__chat {
-	display: flex;
-	margin-left: 35px;
-	border-bottom: 1px solid black;
+.ramsay-card__mountain-description {
+display: flex;
+flex-direction: column;
+align-items: center;
+line-height: 160%;
 }
-.coffe-box__column__follow {
+.ramsay-card__mountain-description__name {
+	font-size: 110%;
+	margin-top: 10px;
+	font-weight: bold;
+	font-family: "roboto medium" sans-serif;
+}
+.ramsay-card__mountain-description__job {
+	margin-bottom: 30px;
+	font-size: 90%;
+	color: gray;
+}
+
+
+.ramsay-card__bottom {
+	width: 360px;
+	height: 176px;
+	background-color: rgb(255, 255, 255);
+	margin-top: 1.5px;
+}
+
+.ramsay-card__bottom__numbers {
 	display: flex;
-	margin-left: 35px;
+	justify-content: space-around;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.ramsay-card__bottom__numbers-top {
+	color: black;
+	font-size: 110%;
+	font-weight: 600;
+	display: flex;
+	justify-content: space-around;
+
+}
+.ramsay-card__bottom__numbers-bottom {
+	color: gray;
+	display: flex;
+	justify-content: space-around;
+}
+.ramsay-button {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+.follow-button {
+	background-color: rgb(36, 197, 161);
+	outline: none;
+	height: 50px;
+	width: 298px;
+	border-radius: 6px;
+	border: none;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	font-weight: 600;
+
+}
+
+
+
+
+
+
+.video-bunny{
+	width: 750px;
+	height: 504px;
+	background-color: rgb(255, 255, 255);
+	margin-left: 30px;
+}
+
+
+.row3 {
+	margin-top: 30px;
+}
+.gentelman {
+	width: 1140px;
+	height: 1185px;
+	background-image: url("images/man-coffee-pic.png") ;
+	background-repeat: no-repeat;
+	background-color: rgb(255, 255, 255);
+	position: relative;
+}
+.gentelman__top_description {
+	font-weight: bold;
+	margin-top: 60px;
+	margin-left: 98px;
+	position: absolute;
+	text-transform: uppercase;
+	font-size: 75%;
+}
+.gentelman__top_description:after {
+	content: "";
+	display: block;
+	border: 10px solid gray;
+	margin-top: 10px;
+	width: 555px;
+
+}
+.gentelman__main_description {
+	position: absolute;
+	margin-top: 230px;
+	margin-left: 98px;
+	font-size: 3.8em;
+	font-weight: 900;
+	color: rgb(51, 54, 59);
 }
