@@ -388,7 +388,7 @@ line-height: 160%;
 .row3 {
 	margin-top: 30px;
 }
-.gentelman {
+.gentleman {
 	width: 1140px;
 	height: 1185px;
 	background-image: url("images/man-coffee-pic.png") ;
@@ -396,7 +396,7 @@ line-height: 160%;
 	background-color: rgb(255, 255, 255);
 	position: relative;
 }
-.gentelman__top_description {
+.gentleman__top_description {
 	font-weight: bold;
 	margin-top: 60px;
 	margin-left: 98px;
@@ -404,19 +404,188 @@ line-height: 160%;
 	text-transform: uppercase;
 	font-size: 75%;
 }
-.gentelman__top_description:after {
+.gentleman__top_description:after {
 	content: "";
 	display: block;
-	border: 10px solid gray;
+	border-bottom: 1px solid gray;
 	margin-top: 10px;
 	width: 555px;
+	position: absolute;
 
 }
-.gentelman__main_description {
+.gentleman__main_description {
 	position: absolute;
 	margin-top: 230px;
 	margin-left: 98px;
 	font-size: 3.8em;
 	font-weight: 900;
 	color: rgb(51, 54, 59);
+}
+.gentleman__main_description:before {
+
+	content: "";
+	display: block;
+	border-top: 1px solid gray;
+	margin-top: 20px;
+	width: 555px;
+}
+
+.gentleman__bottom_row {
+	position: absolute;
+	margin-top: 530px;
+	margin-left: 93px;
+	display: flex;
+	flex-direction: row;
+	width: 323px;
+
+	justify-content: space-between;
+
+}
+.gentleman__bottom_row__by_julian_fox {
+	display: flex;
+	flex-direction: row;
+}
+
+.JulianFox {
+	color: orange;
+}
+
+.gentleman__bottom_row:before {
+content:"";
+display: block;
+border-bottom: 1px solid gray;
+width: 555px;
+position: absolute;
+
+}
+
+.gentleman__white_card {
+	position: absolute;
+	margin-top: 693px;
+	margin-left: 98px;
+	display: flex;
+	flex-direction: row;
+}
+.gentleman__white_card__left_column {
+	display: flex;
+	flex-direction: column;
+	margin-right: 30px;
+	text-align: center;
+}
+.gentleman__white_card__lef_column__number01 {
+	font-size: 5em;
+	font-weight: 900;
+	color: rgb(237, 239, 242);
+	margin-bottom: 40px;
+}
+.gentleman__white_card__lef_column__introduction {
+	text-transform: uppercase;
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	margin-top: 5px;
+	font-weight: bold;
+	font-size: 0.8em;
+}
+
+.gentleman__white_card__white_side {
+	line-height: 1.5em;
+	margin-right: 120px;
+	margin-left: 70px;
+	text-align: justify;
+	color: gray;
+
+}
+
+
+
+
+
+.row4 {
+	margin-top: 30px;
+	display: flex;
+	flex-direction: row;
+
+}
+
+.row4__right {
+	position: relative;
+	height: 555px;
+	height: 608px;
+	background-color: rgb(255, 255, 255);
+	text-align: center;
+}
+
+.row4__right__under_header {
+	font-weight: bold;
+	margin-top: 60px;
+	margin-bottom: 18px;
+	font-size: 1.3em;
+	color: rgb(51,54,59);
+}
+
+.row4__right__header {
+	margin-bottom: 88px;
+	font-size: 3em;
+	font-weight: bold;
+	color: rgb(51,54,59);
+}
+.row4__right__header:after {
+	content: "";
+	display: block;
+	border-bottom: 4px solid black;
+	width: 60px;
+	margin:0 auto;
+	margin-top: 40px;
+
+}
+.row4__right__text {
+	line-height: 1.5em;
+	color: gray;
+	margin-bottom: 10px;
+}
+.row4__right__under_header__button {
+	text-transform: uppercase;
+	padding:19px 44px;
+	border: 1px solid gray;
+	background-color: rgb(255, 255, 255);
+	border-radius: 3px;
+	font-size: 0.8em;
+	font-weight: 600;
+	margin-bottom: 60px;
+
+}
+
+
+
+.row5 {
+	margin-top: 30px;
+}
+
+.white_box_under_diagram {
+	width: 750px;
+	height: 106px;
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	flex-direction: row;
+	position: relative;
+
+}
+.white_box_under_diagram__left__starting_balance {
+	margin-left: 30px;
+	position: absolute;
+}
+.white_box_under_diagram__left__amount {
+	margin-left: 30px;
+	position: absolute;
+}
+.white_box_under_diagram__right__transacted {
+	margin-right: 30px;
+	position: absolute;
+}
+.white_box_under_diagram__right__amount {
+	margin-right: 30px;
+	position: absolute;
 }
