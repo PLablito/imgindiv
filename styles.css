@@ -141,18 +141,15 @@ font-family: 'Roboto', sans-serif;
 }
 
 
+
+
+
+
 .first-row {
 	display: flex;
 	width: 1140px;
 	height: 360px;
-	margin-bottom: 30px;
 }
-
-
-
-
-
-
 
 .two-boxes {
 	display: flex;
@@ -259,7 +256,7 @@ font-family: 'Roboto', sans-serif;
 	flex-direction: column;
 	margin-top: 29px;
 }
-.block {
+.coffe-box__block {
 	margin: 1px;
 	background-color: rgb(255,255,255);
 	width: 97px;
@@ -281,6 +278,7 @@ font-family: 'Roboto', sans-serif;
 	width: 1140px;
 	height: 504px;
 	display: flex;
+
 
 }
 
@@ -373,16 +371,14 @@ line-height: 160%;
 }
 
 
-
-
-
-
 .video-bunny{
 	width: 750px;
 	height: 504px;
 	background-color: rgb(255, 255, 255);
 	margin-left: 30px;
 }
+
+
 
 
 .row3 {
@@ -560,32 +556,182 @@ position: absolute;
 
 
 
+
+
+
 .row5 {
 	margin-top: 30px;
-}
-
-.white_box_under_diagram {
-	width: 750px;
-	height: 106px;
-	background-color: rgb(255, 255, 255);
 	display: flex;
 	flex-direction: row;
-	position: relative;
 
 }
-.white_box_under_diagram__left__starting_balance {
+
+
+	.contact_box {
+		width: 360px;
+		margin-left: 30px;
+		display: flex;
+		flex-direction: column;
+	}
+	.contact_box__nav {
+		background-color: rgb(92,188,255);
+		height: 73px;
+		color: rgb(255,255,255);
+		display: flex;
+		align-items: center;
+	}
+	.contact_box__nav__email {
+		margin-left: 30px;
+	}
+	.contact_box__nav__email__dropdown {
+		margin-left: 12px;
+	}
+	.contact_box__nav__email__settings {
+		margin-left: 109px;
+	}
+	.contact_box__2row {
+		display: flex;
+		align-items: center;
+		height: 73px;
+		margin-top: 2px;
+		background-color: rgb(255,255,255);
+	}
+
+	.contact_box__2row__inbox_icon {
 	margin-left: 30px;
-	position: absolute;
-}
-.white_box_under_diagram__left__amount {
+	}
+
+	.contact_box__2row__inbox {
+	margin-left: 20px;
+	}
+	.contact_box__2row__inbox__4021 {
+		padding: 6px 11px 7px 10px;
+		background-color: rgb(92,188,255);
+		color: white;
+		border-radius: 1px;
+		margin-left: 183px;
+	}
+
+	.contact_box__3row {
+		background-color: rgb(255,255,255);
+		height: 73px;
+		display: flex;
+		align-items: center;
+		margin-top: 2px;
+	}
+
+	.contact_box__4row {
+		background-color: rgb(255,255,255);
+		height: 73px;
+		display: flex;
+		align-items: center;
+		margin-top: 2px;
+	}
+
+	.contact_box__5row {
+		background-color: rgb(255,255,255);
+		height: 73px;
+		display: flex;
+		align-items: center;
+		margin-top: 2px;
+	}
+
+	.contact_box__6row {
+		background-color: rgb(255,255,255);
+		height: 186px;
+		margin-top: 2px;
+
+			}
+
+.tags-drops {
+	display: flex;
+	flex-direction: row;
 	margin-left: 30px;
-	position: absolute;
+	margin-top: 36px;
 }
-.white_box_under_diagram__right__transacted {
-	margin-right: 30px;
-	position: absolute;
-}
-.white_box_under_diagram__right__amount {
-	margin-right: 30px;
-	position: absolute;
-}
+
+.contact_box__6row__button {
+	padding: 20px 115px;
+	background-color: rgb(92,188,255);
+	color: white;
+	text-transform: uppercase;
+	outline: none;
+	border: none;
+	border-radius: 3px;
+	display: flex;
+	align-self: center;
+	margin-top: 56px;
+	}
+
+
+
+
+
+	.row6 {
+	margin-top: -0.1em;
+	}
+
+	.white_box_under_diagram {
+		width: 750px;
+		height: 106px;
+		background-color: rgb(255, 255, 255);
+
+		position: relative;
+
+
+	}
+
+	.white_box_under_diagram__left {
+		display: flex;
+		flex-direction: column;
+
+	}
+	.white_box_under_diagram__right {
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	.white_box_under_diagram__left__starting_balance {
+		left: 30px;
+		position: absolute;
+		top: 30px;
+		font-size: 1.2em;
+		font-weight: bold;
+		color: rgb(51,54,59);
+	}
+	.white_box_under_diagram__left__amount {
+	left: 30px;
+		position: absolute;
+		top: 65px;
+		color: gray;
+		font-size: 0.9em;
+	}
+	.white_box_under_diagram__right__transacted {
+	right: 30px;
+		position: absolute;
+		top: 30px;
+		font-size: 1.2em;
+		font-weight: bold;
+		color: rgb(51,54,59);
+	}
+	.white_box_under_diagram__right__amount {
+		right: 114px;
+		position: absolute;
+		top: 65px;
+		color: gray;
+		font-size: 0.9em;
+		}
+
+		.player {
+			background-color: rgb(255,255,255);
+			height: 140px;
+			width: 1140px;
+			margin-top: 30px;
+			display: flex;
+		}
+		.player__woman_violin {
+			display: flex;
+			align-self: center;
+			margin-left: 30px;
+		}
