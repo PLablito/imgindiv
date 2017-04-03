@@ -115,14 +115,14 @@ background-color: rgb(225,231,237);
   height: 50px;
   border: 0;
 
-border-top-right-radius: 3px;
-border-bottom-right-radius: 3px;
-text-align: center;
-background-color: rgb(140,145,255);
-font-family: 'Roboto', sans-serif;
-margin-left: -0.35em;
-vertical-align: middle;
-
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	text-align: center;
+	background-color: rgb(140,145,255);
+	font-family: 'Roboto', sans-serif;
+	margin-left: -0.35em;
+	vertical-align: middle;
+	cursor:pointer;
 
 }
 
@@ -151,18 +151,18 @@ vertical-align: middle;
 
 
 
-.first-row {
+.first_row {
 	display: flex;
 	width: 1140px;
 	height: 360px;
 }
 
-.two-boxes {
+.post_intro {
 	display: flex;
 	flex-direction: row;
 	margin-top: 30px;
 }
-.two-boxes__left {
+.post_intro__image {
 	background-image: url("images/yellow_woman_box.jpg");
 	height: 264px;
 	width: 360px;
@@ -171,7 +171,7 @@ vertical-align: middle;
 	position: relative;
 }
 
-.two-boxes__left__arrow-left {
+.post-intro__image__arrow-left {
 	width:0;
 	height:0;
 	border-top: 10px solid transparent;
@@ -183,7 +183,7 @@ vertical-align: middle;
 	transform: translateX(347px);
 }
 
-.two-boxes__right {
+.post_intro__right {
 	background-color: rgb(255,255,255);
 	height: 264px;
 	width: 390px;
@@ -191,7 +191,7 @@ vertical-align: middle;
 	flex-direction: column;
 }
 
-.two-boxes__right-header {
+.post_intro__right-header {
 	text-transform: uppercase;
 	font-family: 'roboto' sans-serif;
 	margin-top: 30px;
@@ -202,7 +202,7 @@ vertical-align: middle;
 	flex-direction: column;
 
 }
-.two-boxes__right-header:after {
+.post_intro__right-header:after {
 	content: "";
 	border-bottom: 2px solid rgb(255, 112, 152);
 	width: 40px;
@@ -210,7 +210,7 @@ vertical-align: middle;
 	margin-top: 20px;
 
 }
-.two-boxes__right-description {
+.post_intro__right-description {
 	display: flex;
 	flex-direction: column;
 	margin-top: 20px;
@@ -228,11 +228,11 @@ vertical-align: middle;
 
 
 
-.bottom-line {
+.post_intro__footer {
 	display: flex;
 	flex-direction: row;
 }
-.bottom-line__alex-circle {
+.post_intro__author__avatar {
 	margin-left: 30px;
 	margin-top: 25px;
 	display: flex;
@@ -304,13 +304,13 @@ vertical-align: middle;
 }
 
 
-.ramsay-card {
+.profile_card {
 	display: flex;
 	flex-direction: column;
 
 
 }
-.ramsay-card__mountain {
+.profile_card__background {
 background-image: url("images/cover1mountain.jpg");
 height: 328px;
 width: 360px;
@@ -319,26 +319,26 @@ background-color: rgb(255, 255, 255);
 
 }
 
-.ramsay-circle-pic {
+.profile_card__avatar {
 display: flex;
 margin-left: 118px;
 margin-top: 117px;
 
 }
 
-.ramsay-card__mountain-description {
+.profile_card__description {
 display: flex;
 flex-direction: column;
 align-items: center;
 line-height: 160%;
 }
-.ramsay-card__mountain-description__name {
+.profile_card__name {
 	font-size: 110%;
 	margin-top: 10px;
 	font-weight: bold;
 	font-family: "roboto medium" sans-serif;
 }
-.ramsay-card__mountain-description__job {
+.profile_card__position {
 	margin-bottom: 30px;
 	font-size: 90%;
 	color: gray;
@@ -378,7 +378,6 @@ line-height: 160%;
 	margin-bottom: 30px;
 }
 .follow-button {
-	background-color: rgb(36, 197, 161);
 	outline: none;
 	height: 50px;
 	width: 298px;
@@ -386,9 +385,13 @@ line-height: 160%;
 	border: none;
 	text-align: center;
 	text-transform: uppercase;
-	color: white;
 	font-weight: 600;
 
+}
+.follow-button:hover {
+	background-color: rgb(36, 197, 161);
+	color:white;
+	cursor:pointer;
 }
 
 
