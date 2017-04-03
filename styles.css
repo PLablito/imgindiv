@@ -163,7 +163,7 @@ vertical-align: middle;
 	margin-top: 30px;
 }
 .two-boxes__left {
-	background-image: url("images/yellow-woman.png");
+	background-image: url("images/yellow_woman_box.jpg");
 	height: 264px;
 	width: 360px;
 	background-repeat: no-repeat;
@@ -171,11 +171,11 @@ vertical-align: middle;
 	position: relative;
 }
 
-.two-boxex__left__arrow-left {
+.two-boxes__left__arrow-left {
 	width:0;
 	height:0;
 	border-top: 10px solid transparent;
-	border-right: 20px solid rgb(255,255,255);
+	border-right: 13px solid rgb(255,255,255);
 	border-bottom: 10px solid transparent;
 	position: absolute;
 	display: flex;
