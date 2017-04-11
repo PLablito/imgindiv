@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
   <title>próba</title>
 </head>
 <body>
@@ -114,15 +115,27 @@
 </div>
 </div> <!--end of profile_card__footer-->
 
-
 </div> <!--end of profile_card-->
 
-
-<video class="video-bunny" controls>
+<div class="video-container">
+<video class="video">
   <source src="video/mov_bbb.mp4" type="video/mp4">
 </video> <!--end of video-bunny-->
 
-
+<div class="video-controls">
+  <button type="button" id="play-pause">
+    <img src="images/player1/play-circle.png"/>
+  </button>
+  <input type="range" id="seek-bar" value="0">
+  <button type="button" id="mute">
+    <img src="images/player1/sound.png"/>
+  </button>
+  <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
+  <button type="button" id="full-screen">
+    <img src="images/player1/fullscreen.png"/>
+  </button>
+</div> <!--end of video-controls-->
+</div> <!--end of video-container-->
 
 </div> <!--end of second-row-->
 
@@ -193,12 +206,12 @@
     <div class="contact_box__2row">
         <img src="images/inbox-mail.png" alt="inbox_icon" class="contact_box__2row__inbox_icon">
         <p class="contact_box__2row__inbox">Inbox</p>
-        <p class="contact_box__2row__inbox__4021">4021</p>
+        <p class="contact_box__2row__inbox__number">4021</p>
     </div>
     <div class="contact_box__3row">
         <img src="images/mail.png" alt="mail_icon" class="contact_box__3row__mail_icon">
         <p class="contact_box__3row__sent_mail">Sent Mail</p>
-        <p class="contact_box__3row__sent_mail__2044">2044</p>
+        <p class="contact_box__3row__sent_mail__number">2044</p>
     </div>
     <div class="contact_box__4row">
         <img src="images/flag.png" alt="flag_icon" class="contact_box__4row__flag_icon">
@@ -206,14 +219,20 @@
     </div>
     <div class="contact_box__5row">
         <img src="images/trash.png" alt="trash_icon" class="contact_box__5row__flag_icon">
-        <p class="contact_box__5row__trash">Trash</p>
+        <p class="contact_box__5row__text_trash">Trash</p>
     </div>
     <div class="contact_box__6row">
-      <div class="tags-drops">
-        <p class="contact_box__6row__coloured-circles">tags</p>
-        <img src="images/coloured-circles.png" alt="coloured-circles_icon" class="contact_box__5row__flag_icon">
-      </div>
-        <button class="contact_box__6row__button">compose</button>
+      <div class="tags">
+        <p class="tags_text">tags</p>
+          <div class="tags_text__dots">
+            <picture class="tags_dot1"></picture>
+            <picture class="tags_dot2"></picture>
+            <picture class="tags_dot3"></picture>
+            <picture class="tags_dot4"></picture>
+          </div>
+
+      </div class="contact_box__6row__button">
+        <button class="contact_box__6row__button_text">compose</button>
       </div>
 
     </div> <!--end of contact-box-->
@@ -224,14 +243,14 @@
 
 <div class="row6">
 
-<div class="white_box_under_diagram">
-  <div class="white_box_under_diagram__left">
-    <p class="white_box_under_diagram__left__starting_balance">Starting balance</p>
-    <p class="white_box_under_diagram__left__amount">880.000.00 $</p>
+<div class="diagram_description">
+  <div>
+    <p class="diagram_description__starting_balance">Starting balance</p>
+    <p class="diagram_description__left__amount">880.000.00 $</p>
   </div>
-  <div class="white_box_under_diagram__right">
-    <p class="white_box_under_diagram__right__transacted">Amount transacted</p>
-    <p class="white_box_under_diagram__right__amount">201.990.99 $</p>
+  <div>
+    <p class="diagram_description__transacted">Amount transacted</p>
+    <p class="diagram_description__right__amount">201.990.99 $</p>
   </div>
 </div> <!--end of white_box_under_diagram-->
 
@@ -239,13 +258,79 @@
 
 
 
-<div class="player">
-  <img src="images/woman-violin-circle-pic.png" alt="woman_with_violin_pic" class="player__woman_violin">
+<div class="audio_player">
+  <img src="images/woman-violin-circle-pic.png" alt="author_avatar" class="player__author_avatar">
     <div class="player__song_desc">
       <p class="player__song_title">Shadows</p>
       <p class="player__song_artist">Lindsey Stirling</p>
     </div>
-</div> <!--end of player-->
+    <div class="audio_player__controls">
+      <button type="button" id="audio_player__rewind">
+        <img src="images/audio/rewind.png"/>
+      </button>
+      <button type="button" id="audio_player__play">
+        <img src="images/audio/play-circle.png"/>
+      </button>
+      <button type="button" id="audio_player__forward">
+        <img src="images/audio/forward.png"/>
+      </button>
+      <button type="button" id="audio_player__sound">
+        <img src="images/audio/sound.png"/>
+      </button>
+    </div> <!--end of audio_player__controls-->
+</div> <!--end of audio_player-->
+
+<div class="row7">
+  <article class="fashion_summer">
+    <img src="images/woman-in-white.png" alt="woman_in_white_dress"/>
+      <div class="fashion_summer_desc">
+        <p class="fashion_summer_desc__top">Fashion means passion</p>
+        <p class="fashion_summer_desc__main">Summer 2015</p>
+        <p class="fashion_summer_desc__bottom">Browse collection
+        <img src="images/right-collection.png" alt="right arrow" class="fashion_summer_desc__bottom__arrow"/>
+        </p>
+      </div>
+  </article>
+  <article class="fashion_winter">
+    <img src="images/red-jacket.png" alt="red_jacket" class="fashion_winter__image"/>
+    <div class="fashion_winter__desc">
+      <p class="fashion_winter__desc__head">Jackets</p>
+      <p class="fashion_winter__desc__view">View Products
+        <img src="images/right-collection.png" alt="right arrow" class="fashion_summer_desc__bottom__arrow"/>
+        </p>
+      <p class="fashion_winter__desc__text">Stunning new models from the winter collection have just arrived. Be sure to check them out!</p>
+    </div>
+  </article>
+
+
+</div> <!--end of row7-->
+
+
+<div class="row8">
+  <article class="shopping">
+    <div class="shopping__hero">
+      <img src="images/sofa.png" alt="sofa"/>
+      <p class="shopping__hero__image__price">399$</p>
+    </div>
+    <div class="shopping__desc">
+      <h1 class="shopping__desc__header">Amazing Furniture</h1>
+      <p class="shopping__desc__text">Modern, elegant and eye catching. These are the features this furniture offers.</p>
+      <button class="shopping__desc__button">buy now</button>
+    </div>
+  </article>
+
+
+<article class="bedroom_section">
+  <div class="bedroom_section__hero">
+    <img src="images/bedroom/bedroom.jpg" class="bedroom_section__hero__image"/>
+      <picture>
+        <img src="images/bedroom/star-bedroom.png" alt="star" class="bedroom_section__hero__image__star"/>
+      </picture>
+  </div>
+
+</article>
+
+</div> <!--end of row8-->
 
 
 
