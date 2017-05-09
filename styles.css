@@ -381,12 +381,18 @@ line-height: 160%;
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: 600;
+	transition: width, height 0.2s;
+	-webkit-transition: width, height 0.2s;
+	transition-timing-function: linear;
+	-webkit-transition-timing-function: linear;
 }
 
 .profile_card__footer__button__follow:hover {
 	background-color: rgb(36, 197, 161);
 	color:white;
 	cursor:pointer;
+	width: 310px;
+	height: 60px;
 }
 .video-container {
 	position: relative;
@@ -989,11 +995,234 @@ line-height: 160%;
 				cursor: pointer;
 				color: white;
 			}
-
-			.bedroom_section__hero__image {
-				margin-left: 30px;
+			.bedroom_section {
 				position: relative;
+				width: 750px;
+				height: 486px;
+				background-color: rgb(255, 255, 255);
+				left: 30px;
+			}
+
+			.bedroom_section__hero__triangle {
+				width: 0;
+				height: 0;
+				background-color: ;
+				border-top: 80px solid rgb(255,99, 143);
+				border-right: 80px solid transparent;
+				position: absolute;
+				top: 0px;
 			}
 			.bedroom_section__hero__image__star {
 				position: absolute;
+			}
+			.bedroom_section__desc_head {
+				display: flex;
+				flex-direction: row;
+				margin-top: 30px;
+			}
+			.bedroom_section__desc_head__header {
+				font-size: 1.1em;
+				font-weight: 600;
+				position: absolute;
+				left: 30px;
+			}
+			.bedroom_section__desc_head__price {
+				position: absolute;
+				right: 32px;
+				color: rgb(101, 189, 140);
+				font-size: 1.1em;
+			}
+			.bedroom_section__desc_head__text {
+				margin-top: 40px;
+				margin-left: 30px;
+				color: rgba(0, 0, 0, 0.6);
+				line-height: 1.5em;
+				font-size: 0.92em;
+			}
+			.bedroom_section__desc__footer {
+				display: flex;
+				flex-direction: row;
+				position: absolute;
+				left: 30px;
+				margin-top: 30px;
+			}
+			.bedroom_section__desc__footer__button {
+				background-color: rgb(255,255, 255);
+				border: 1px solid gray;
+				border-radius: 3px;
+				-moz-border-radius: 3px;
+				-webkit-border-radius: 3px;
+				padding: 20px 35px;
+				text-transform: uppercase;
+				outline: none;
+			}
+			.bedroom_section__desc__footer__button:hover {
+				background-color: rgb(255,99, 143);
+				color: white;
+				border: none;
+				cursor: pointer;
+			}
+
+			.row9 {
+				width: 1140px;
+				margin-top: 30px;
+			}
+			.shop1_row {
+				height:73px;
+				background-color: rgb(255, 255, 255);
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				font-weight: bold;
+			}
+
+
+
+
+
+
+
+
+			.shop2_row {
+						height:73px;
+						background-color: rgb(255, 255, 255);
+						margin-top: 1px;
+						height: 200px;
+						display: flex;
+						flex-direction: row;
+						position: relative;
+					}
+
+
+			.shop2_row__button {
+				border: 1px solid rgba(0,0,0,0.2);
+				background-color: rgb(255, 255, 255);
+				height: 36px;
+				width: 36px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.shop2_row__column1 {
+				display: flex;
+				flex-direction: column;
+				position: absolute;
+				left: 35px;
+			}
+			.shop2_row__column2 {
+				display: flex;
+				flex-direction: column;
+				position: absolute;
+				left: 100px
+			}
+			.shop2_row__column3 {
+				display: flex;
+				flex-direction: column;
+				position: absolute;
+				left: 410px
+			}
+			.shop2_row__column4 {
+				display: flex;
+				flex-direction: column;
+				position: absolute;
+				left: 650px
+			}
+			.shop2_row__column5 {
+				display: flex;
+				flex-direction: column;
+				position: absolute;
+				left: 711px
+			}
+			.shop2_row__column6 {
+				display: flex;
+				flex-direction: column;
+				position: absolute;
+				left: 745px
+			}
+			.shop2_row__column7 {
+				display: flex;
+				flex-direction: column;
+				position: absolute;
+				left: 980px
+			}
+			.shop2_row__column8 {
+				display: flex;
+				flex-direction: column;
+				position: absolute;
+				left: 1090px
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+			.shop3_row {
+				height:73px;
+				background-color: rgb(255, 255, 255);
+				margin-top: 1px;
+				height: 193px;
+				position: relative;
+			}
+			.shop3_row__line1 {
+				position: absolute;
+				right: 30px;
+				top: 30px;
+				color: rgb(255, 99, 143);
+				font-size: 0.85em;
+			}
+			.shop3_row__line2 {
+				position: absolute;
+				top: 62px;
+				left: 30px;
+				color: rgba(0, 0, 0, 0.5);
+				font-size: 0.85em;
+				display: flex;
+				flex-direction: row;
+				text-align: middle;
+			}
+			#shop3_row__line2__input {
+				width: 180px;
+				height: 30px;
+				border-color: rgba(0,0,0,0.2);
+				border-width: 1px;
+			}
+			.shop3_row__line2__total {
+				position: absolute;
+				right: 30px;
+				top: 65px;
+				font-weight: bold;
+			}
+
+
+			.shop3_row__line3__button {
+				text-transform: uppercase;
+				color: rgb(0, 0, 0);
+				padding: 20px 32px;
+				background-color: rgb(255, 255, 255);
+				border: none;
+				outline: none;
+				position: absolute;
+				bottom: 30px;
+				right: 30px;
+				border: 1px solid rgba(0, 0, 0, 0.2);
+				border-radius: 3px;
+				-moz-border-radius:3px;
+				-webkit-border-radius:3px;
+				transition: padding 0.1s;
+				-webkit-transition:padding 0.1s;
+			}
+			.shop3_row__line3__button:hover {
+				background-color: rgb(255, 99, 143);
+				color: rgb(255, 255, 255);
+				padding: 25px 40px;
+				font-weight: bold;
+				cursor: pointer;
 			}
