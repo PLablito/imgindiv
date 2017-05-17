@@ -299,7 +299,7 @@ flex-direction: row;
 	width: 1140px;
 	height: 504px;
 	display: flex;
-}
+	}
 
 .profile_card {
 	display: flex;
@@ -895,6 +895,7 @@ line-height: 160%;
 			font-size: 0.85em;
 			margin-top: 30px;
 			font-weight: bold;
+			cursor: pointer;
 		}
 		.fashion_summer_desc__bottom__arrow {
 			margin-left: 5px;
@@ -927,6 +928,7 @@ line-height: 160%;
 				margin-top: 25px;
 				font-size: 0.8em;
 				font-weight: bold;
+				cursor: pointer;
 			}
 			.fashion_winter__desc__text {
 				margin-top: 33px;
@@ -995,6 +997,9 @@ line-height: 160%;
 				cursor: pointer;
 				color: white;
 			}
+
+
+
 			.bedroom_section {
 				position: relative;
 				width: 750px;
@@ -1044,7 +1049,7 @@ line-height: 160%;
 				flex-direction: row;
 				position: absolute;
 				left: 30px;
-				margin-top: 30px;
+				bottom: 35px;
 			}
 			.bedroom_section__desc__footer__button {
 				background-color: rgb(255,255, 255);
@@ -1055,12 +1060,40 @@ line-height: 160%;
 				padding: 20px 35px;
 				text-transform: uppercase;
 				outline: none;
+				position: absolute;
+				right: 30px;
+				bottom: 30px;
 			}
 			.bedroom_section__desc__footer__button:hover {
 				background-color: rgb(255,99, 143);
 				color: white;
 				border: none;
 				cursor: pointer;
+			}
+			.bedroom_section__desc__footer__buyers_number {
+				width: 60px;
+				height: 30px;
+				border: 1px solid rgba(0, 0, 0, 0.5);
+				-webkit-border-radius:10px;
+				-moz-border-radius:10px;
+				border-radius: 16px 16px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 0.9em;
+				color: rgba(0, 0, 0, 0.5);
+				position: absolute;
+				left: 105px;
+			}
+			.bedroom_section__desc__footer__buyers_number__text {
+				font-size: 0.9em;
+				color: rgba(0, 0, 0, 0.5);
+				display: flex;
+				align-self: center;
+				position: absolute;
+				left: 176px;
+				width: 100px;
+
 			}
 
 			.row9 {
@@ -1079,91 +1112,6 @@ line-height: 160%;
 
 
 
-
-
-
-
-			.shop2_row {
-						height:73px;
-						background-color: rgb(255, 255, 255);
-						margin-top: 1px;
-						height: 200px;
-						display: flex;
-						flex-direction: row;
-						position: relative;
-					}
-
-
-			.shop2_row__button {
-				border: 1px solid rgba(0,0,0,0.2);
-				background-color: rgb(255, 255, 255);
-				height: 36px;
-				width: 36px;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-			}
-
-			.shop2_row__column1 {
-				display: flex;
-				flex-direction: column;
-				position: absolute;
-				left: 35px;
-			}
-			.shop2_row__column2 {
-				display: flex;
-				flex-direction: column;
-				position: absolute;
-				left: 100px
-			}
-			.shop2_row__column3 {
-				display: flex;
-				flex-direction: column;
-				position: absolute;
-				left: 410px
-			}
-			.shop2_row__column4 {
-				display: flex;
-				flex-direction: column;
-				position: absolute;
-				left: 650px
-			}
-			.shop2_row__column5 {
-				display: flex;
-				flex-direction: column;
-				position: absolute;
-				left: 711px
-			}
-			.shop2_row__column6 {
-				display: flex;
-				flex-direction: column;
-				position: absolute;
-				left: 745px
-			}
-			.shop2_row__column7 {
-				display: flex;
-				flex-direction: column;
-				position: absolute;
-				left: 980px
-			}
-			.shop2_row__column8 {
-				display: flex;
-				flex-direction: column;
-				position: absolute;
-				left: 1090px
-			}
-
-
-
-
-
-
-
-
-
-
-
-
 			.shop3_row {
 				height:73px;
 				background-color: rgb(255, 255, 255);
@@ -1175,7 +1123,7 @@ line-height: 160%;
 				position: absolute;
 				right: 30px;
 				top: 30px;
-				color: rgb(255, 99, 143);
+				color: rgba(0, 0, 0, 0.5);
 				font-size: 0.85em;
 			}
 			.shop3_row__line2 {
@@ -1225,4 +1173,71 @@ line-height: 160%;
 				padding: 25px 40px;
 				font-weight: bold;
 				cursor: pointer;
+			}
+
+
+
+
+
+
+			.cart {
+				width: 1140px;
+				height: 200px;
+				background-color: rgb(255, 255, 255);
+				margin-top: 1px;
+				display: flex;
+				align-items: center;
+			}
+
+			.shop_table--data1 {
+				padding: 60px;
+				padding-top:20px;
+				padding-bottom: 0px;
+			}
+			.shop_table__pic1 {
+				vertical-align: middle;
+			}
+			.shop_table--data2 {
+				padding: 60px;
+				padding-top:0px;
+			}
+			.shop_table__pic2 {
+				vertical-align: middle;
+			}
+			.shop_table__button {
+				display: flex;
+				justify-content: center;
+				background-color: rgb(255, 255, 255);
+				border: 1px solid rgba(0, 0, 0, 0.3);
+				outline: none;
+				cursor: pointer;
+				height: 36px;
+				width: 36px;
+				display: table-cell;
+				background: url(images/shop/plus-add.png) 50% 50%;
+				background-repeat: no-repeat;
+				vertical-align: middle;
+			}
+			.remove {
+				background: url(images/shop/minus-remove.png) 50% 50%;
+				background-repeat: no-repeat;
+				vertical-align: middle;
+			}
+
+			.shop_table__button--cross {
+				border: none;
+				background-color: rgb(255, 255, 255);
+				outline: none;
+				cursor: pointer;
+				vertical-align: middle;
+			}
+
+			.shop_table__price {
+				text-align: right;
+				font-size: 0.9em;
+				color: rgba(0, 0, 0, 0.5);
+			}
+			.shop_table__quantity {
+				font-size: 0.9em;
+				color: rgba(0, 0, 0, 0.5);
 			}
